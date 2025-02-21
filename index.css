@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+.container{
+    position: relative;
+}
+nav{
+    
+    color: rgb(13, 13, 13);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 1vw 4vw;
+    border-bottom: 1px solid black;
+    font-family: "Montserrat", serif;
+}
+.nav-menu{
+    display: flex;
+    gap: 4vw;
+    font-size: 12px;
+    align-items: center;
+    
+    
+}
+nav h1{
+    font-size: 2vw;
+    
+}
+nav h4{
+    font-size: 1vw;
+}
+i{
+    font-size: 2vw;
+    display: none;
+    font-weight: 800;
+}
+.main-content{
+    height: 92vh;
+    /* background-color: crimson; */
+    position: relative;
+    display: flex;
+    font-family: "Montserrat", serif;
+}
+.left{
+    height: 100%;
+    width: 65%;
+    /* background-color: greenyellow; */
+    padding: 5vw 4vw;
+}
+.left h1{
+    font-size: 4vw;
+    line-height: 4.4vw;
+    word-spacing: 1vh;
+}
+.left p{
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+.right{
+    height: 100%;
+    width: 45%;
+    /* background-color: rgb(47, 95, 255); */
+}
+span{
+    color: #ff735c;
+}
+button{
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+    background-color: #ff735c;
+    color: #ffff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+
+/* responsiveness */
+@media (max-width:600px) {
+    nav{
+        
+        
+        padding: 3vw;
+        
+
+    }
+    i{
+        display: block;
+        font-size: 4vw;
+    }
+    nav h4{
+        display: none;
+    }
+    nav h1{
+        font-size: 5vw;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+    .left{
+        height: 100%;
+        width: 100%;
+        padding: 3VW;
+
+
+    }
+    .left h1{
+        font-size: 6vw;
+        line-height: 7vw;
+        word-spacing: 7px;
+    }
+    .left p{
+        font-size: 2.3vw;
+    }
+    .right{
+        height: 100%;
+        width: 100%;
+    }
+    button{
+        font-size:2.5vw;
+        padding: 2vw 2vw;
+        background-color: #ff735c;
+        color: #ffff;
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+}
+    
+
+
